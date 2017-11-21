@@ -32,6 +32,8 @@ addListener('#submitButton','submit', function (event) {
   //http://api.musixmatch.com/ws/1.1/track.search?q_artist=selena&apikey=547631ad01eec50f795c47471f724f80
 // 5
   fetch(url, function (response) {
+    document.getElementById("song").innerHTML = "";
+    if (singer.trim() != ""){
     var msg= response.message.body.track_list;
     console.log(msg);
     // var arr =[];
@@ -55,5 +57,10 @@ addListener('#submitButton','submit', function (event) {
       ul.appendChild(li);
         }
 
-    });
+
+    }  else  {
+      alert("Write a name of a singer") ; 
+    }
+form.querySelector('input[name=name]').value="";
+  });
 });
