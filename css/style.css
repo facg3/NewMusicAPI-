@@ -39,3 +39,12 @@ input[type=submit] {
   padding: 0;
   cursor: pointer;
 }
+
+li{
+  list-style: none;
+  margin-top: 10px;
+}
+a{
+  text-decoration: none;
+
+}

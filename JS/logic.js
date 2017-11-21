@@ -59,7 +59,7 @@ addListener('#submitButton','submit', function (event) {
 
 
     }  else  {
-      alert("Write a name of a singer") ; 
+      alert("Write a name of a singer") ;
     }
 form.querySelector('input[name=name]').value="";
   });
