@@ -42,11 +42,12 @@ addListener('#submitButton','submit', function (event) {
       return  x.track.track_name ;
     });
     console.log(songs);
-    
+
     for (var i = 0; i < songs.length; i++) {
       var ul=document.getElementById('song');
       var li=document.createElement('li');
       var a=document.createElement('a');
+      a.setAttribute("href","#");
       var song=songs[i];
       var songname = document.createTextNode(song);
       a.appendChild(songname);
