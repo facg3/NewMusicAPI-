@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang = "uk">
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>SSST Brand</title>
+      <title>Songs Viewer</title>
       <link rel="stylesheet" type="text/css" href="./css/style.css" />
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
   </head>
 
   <body>
+<img class = "logo" src = "logo2.gif" alt = "Find Top Songs For Your Favorite Artist">
 
     <section id="pattern" class="pattern">
   <form id="submitButton" class="f">
       <label class="is-vishidden">Search the site</label>
-    <input type="search" class="singerName" value="" name="name" placeholder="Search For Singer" />
-    <input type="submit" class="btn search-submit" value="Search">
+    <label><input type="search" class="singerName" value="" name="name" placeholder="Search For Singer" />
+    <input type="submit" class="btn search-submit" value="Search"></label>
 </form>
+<div class = "numb"><input type = "number" class="songsnumb" value="10" max="10" min="1"></div>
 </section>
 <!--End Pattern HTML-->
 
@@ -22,7 +25,8 @@
   <section class="resultContainer">
 
 		<section  class="albumSong">
-      <br><br><br><br>
+
+      <h1 class="number"></h1>
       <ul id="song">
       </ul>
 
