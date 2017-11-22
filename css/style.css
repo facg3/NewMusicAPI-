@@ -30,6 +30,7 @@ ul, menu, dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 40px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .pattern {
@@ -79,7 +80,15 @@ input[type=submit] {
   border: 2px solid #14ff00;
   border-radius: 8px;
 }
-
+input[type = number]{
+  background-color: white;
+  text-align: center;
+  width: 50%;
+}
+.numb{
+  display: flex;
+  justify-content: center;
+  }
 .resultContainer .albumSong {
   padding-top: 25px;
 }
@@ -113,4 +122,9 @@ a:-webkit-any-link {
 }
 a:active{
   color: red;
+}
+.number{
+  text-align: center;
+  color: red;
+  font-size: 43px;
 }
