@@ -35,6 +35,11 @@ addListener('#submitButton','submit', function (event) {
     document.getElementById("song").innerHTML = "";
     if (singer.trim() != ""){
     var number = document.getElementsByClassName("songsnumb")[0].value;
+    if (number > 10){
+      number = 10;
+      document.getElementsByClassName("songsnumb")[0].value = 10;
+    }
+
     document.getElementsByClassName("number")[0].innerHTML = "Top " + number + " songs for \"" + singer + "\"";
     var msg= response.message.body.track_list;
     console.log(msg);
