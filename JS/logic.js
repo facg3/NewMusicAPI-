@@ -34,6 +34,8 @@ addListener('#submitButton','submit', function (event) {
   fetch(url, function (response) {
     document.getElementById("song").innerHTML = "";
     if (singer.trim() != ""){
+    var number = document.getElementsByClassName("songsnumb")[0].value;
+    document.getElementsByClassName("number")[0].innerHTML = "Top " + number + " songs for \"" + singer + "\"";
     var msg= response.message.body.track_list;
     console.log(msg);
     // var arr =[];
@@ -46,6 +48,8 @@ addListener('#submitButton','submit', function (event) {
     console.log(songs);
 
     for (var i = 0; i < songs.length; i++) {
+      if(i>=number){break;}
+      else{
       var ul=document.getElementById('song');
       var li=document.createElement('li');
       var a=document.createElement('a');
@@ -55,7 +59,8 @@ addListener('#submitButton','submit', function (event) {
       a.appendChild(songname);
       li.appendChild(a);
       ul.appendChild(li);
-        }
+
+    }}
 
 
     }  else  {
