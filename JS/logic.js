@@ -39,8 +39,14 @@ addListener('#submitButton','submit', function (event) {
       number = 10;
       document.getElementsByClassName("songsnumb")[0].value = 10;
     }
+    else if(number < 1){
+      number = 1;
+      document.getElementsByClassName("songsnumb")[0].value = 1;
 
-    document.getElementsByClassName("number")[0].innerHTML = "Top " + number + " songs for \"" + singer + "\"";
+    }
+
+    if (number > 1) {document.getElementsByClassName("number")[0].innerHTML = "Top " + number + " songs for \"" + singer + "\"";}
+    else {document.getElementsByClassName("number")[0].innerHTML = "Top " + " song for \"" + singer + "\"";}
     var msg= response.message.body.track_list;
     console.log(msg);
     // var arr =[];
