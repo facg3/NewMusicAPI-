@@ -15,7 +15,6 @@ body {
   padding: 0;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  background-image: url("img_tree.png");
   background-repeat: no-repeat;
   background-position: right top;
   margin-right: 200px;
@@ -103,7 +102,7 @@ textarea:focus, input:focus {
   outline: none;
 }
 
-a:-webkit-any-link {
+a  {
     color: lime;
     cursor: auto;
     text-decoration:none;
