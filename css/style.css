@@ -1,4 +1,17 @@
-.is-vishidden {
+
+
+body{
+
+  width: 100%;
+  text-align: center;
+  background-image:
+    url(./black2.jpeg);
+  background-size: cover;
+  overflow: hidden;
+  min-height: 600px;
+
+  }
+  .is-vishidden {
   position: absolute;
   overflow: hidden;
   width: 1px;
@@ -6,11 +19,33 @@
   padding: 0;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
+
+  background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: circle;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
 }
 
 .pattern {
+  position: absolute;
+  left: 340px;
+  right: 330px;
+   top:8px;
+     padding-left: 2cm;
+       padding-right:10cm;
+     width:42%;
+     margin-left:40px;
   padding: 1em;
-  line-height: 1;
+  background-color:#000000;
 }
 .f {
    position: relative;
@@ -19,7 +54,10 @@
 input {
   display: block;
   border: 1px solid #000;
+  background-color: #101010;
+
 }
+
 
 input[type=search] {
     width: 100%;
@@ -27,6 +65,8 @@ input[type=search] {
     padding-right: 7em;
     position: relative;
    top: 0;
+   border: 2px solid #14ff00;
+border-radius: 12px;
 }
 
 input[type=submit] {
@@ -38,13 +78,27 @@ input[type=submit] {
   width: 6em;
   padding: 0;
   cursor: pointer;
+  background-color: #4a6737;
+      border: 2px solid #14ff00;
+      border-radius: 8px;
 }
 
+.resultContainer .albumSong{
+  padding-top: 25px ;
+}
+ul .a{list-style-type: circle;}
+
 li{
+  padding-top:15xpx;
   list-style: none;
   margin-top: 10px;
+
+
+    text-align: center;
 }
+
 a{
   text-decoration: none;
+
 
 }
