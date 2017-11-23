@@ -1,44 +1,38 @@
 ## NewMusicAPI Team
 
-## Who are we :
+Our can view our app using [Github pages] ( https://facg3.github.io/NewMusicAPI-/
+)
 
-Hanan Qwaider .
-Tariq Al Qzaz .
-Walaa Montaseb.
-Mohammud mortaja .
+## Who are we:
+-Hanan Qwaider.
+-Tariq Al Qazzaz.
+-Walaa Montaseb.
+-Mohammud Mortaga.
 
 
-## How we work ?
+## How we work:
+For the past 2 days, we worked in a single group on the first function and XHR request and create an API key in the first day, then we divided ourselves to pairs, one worked on DOM manipulation while the other worked on another function.
 
-In our time we work in group the first function and XHR request and create a API key in the first day ... then we divided ourselves pairs one work in CSS and HTML the other make another function but all what we do are
-completely work .
+## The files in our project:
 
-## The files in our project:-
 
--logic.js : functions .
+-logic.js: contains the used functions.
 
--test.js : we haven't function to  test it but we separate dom  from logic js .
+-test.js: However, we ended up not making any tests as a result of mixing DOM and logic functions together :-1:
 
--style.css : To give our project a nice form .
+-style.css : To give our project a nice look.
 
--index.html : To write a paragraph and tittle .
+-index.html : To specify the structure of the app.
+
 
 ## Our project:
+It's a website that helps you search for the top 10 popular songs for your favorite artist, including the links that take you to youtube.com to view the video!
 
-it's a website that help you to search a bout best songer for your singer and the links that move you to youtube side when you click .
+## How it was done:
+-We created an API key to search for the music.
 
+-We created a XHR request.
 
-## What we doing :
+-We coded the functions that return an object of songs and an input field that takes a text and looks it up in that object.
 
--We Create API key for search Music .
-
--We creart a request XHR then .
-
--We write the function that return aboject of songs for the button search that take a textfildes that's I add it (singer) .
-
--Then we creat a function that take APIKEY YOUTUBE.
-
--Ten we connect this function together by callback function that's define it in the main function .
-
-You can view our app using  [Github pages]( https://facg3.github.io/NewMusicAPI-/
-)
+-After that we created a function that grabs the Youtube API and connected these two functions together.
