@@ -40,7 +40,7 @@ ul, menu, dir {
   z-index: 0
 }
 
-.f {
+.submitForm {
   position: relative;
 }
 
@@ -73,6 +73,9 @@ input[type=submit] {
   background-color: #4a6737;
   border: 2px solid #14ff00;
   border-radius: 8px;
+  color: white;
+  font-weight: bold;
+
 }
 input[type = number]{
   background-color: white;
@@ -123,7 +126,7 @@ a:active{
 .number{
   text-align: center;
   color: red;
-  font-size: 41px;
+  font-size: 30px;
   -webkit-animation:colorchange 20s infinite alternate;
 
 

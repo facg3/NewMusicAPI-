@@ -12,14 +12,13 @@
 <img class = "logo" src = "logo2.gif" alt = "Find Top Songs For Your Favorite Artist">
 
     <section id="pattern" class="pattern">
-  <form id="submitButton" class="f">
-      <label class="is-vishidden">Search the site</label>
-    <label><input type="search" class="singerName" value="" name="name" placeholder="Search For Singer" />
-    <input type="submit" class="btn search-submit" value="Search"></label>
+  <form id="submitForm" class="submitForm">
+      <label for="singerName" class="is-vishidden">Search the site</label>
+    <input type="search" id="singerName" class="singerName" value="" name="name" placeholder="Search For Singer" />
+    <input type="submit" class="btn search-submit" value="Search">
 </form>
 
 </section>
-<!--End Pattern HTML-->
 
 
   <section class="resultContainer">
@@ -32,25 +31,9 @@
 
 		</section>
 
-    <section class="pattern-description">
-
-		</section>
-
-    <section class="search-results">
-    <img class="image" src="" alt="image car" />
-
-  </section>
 
 	</section>
-
-  <!-- <script src="./JS/logic.js"></script> -->
-        <!-- https://www.googleapis.com/<youtube>s</youtube>/v3/search -->
-
-        <!-- <footer id="footer">
-            <p id="copyRight">&copy; Copy rights reserved: SSST Band</p>
-        </footer> -->
-
-
         <script src="./JS/logic.js"></script>
+        <script src="./JS/dom.js"></script>
 </body>
 </html>
