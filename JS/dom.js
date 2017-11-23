@@ -4,6 +4,9 @@ addListener('#submitForm', 'submit', function(event) {
   var endpoint = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_artist=";
   var form = event.target;
   var singer = form.querySelector('input[name=name]').value;
+  if (singer.trim() == ""){
+    form.querySelector('input[name=name]').value = "";
+    return alert("Enter the name of a singer.")}
   var s =singer;
   singer = singer.replace(/ /g, '%20');
   var form = event.target;
@@ -11,7 +14,7 @@ addListener('#submitForm', 'submit', function(event) {
   var url = endpoint + singer + apiKey+"&s_track_rating=desc";
   fetch(url, function(response) {
     document.getElementById("song").innerHTML = "";
-    if (singer.trim() != "") {
+
 
 
 
@@ -36,9 +39,7 @@ addListener('#submitForm', 'submit', function(event) {
         ul.appendChild(li);
 
       })
-    } else {
-      alert("Write a name of a singer");
-    }
+
 
     form.querySelector('input[name=name]').value = "";
   });
