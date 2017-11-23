@@ -3,6 +3,7 @@ function addListener(selector, eventName, callback) {
 }
 
 function fetch(url, callback) {
+  if (singer.trim() != ""){
   var xhr = new XMLHttpRequest();
   xhr.addEventListener('load', function() {
     if (xhr.status === 200) {
@@ -14,6 +15,9 @@ function fetch(url, callback) {
   });
   xhr.open('GET', url);
   xhr.send();
+} else {
+  alert("Enter a name of a singer.")
+}
 }
 
 function linksyoutube(str, singer, cb) {
